@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: comercial-nazareth
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free

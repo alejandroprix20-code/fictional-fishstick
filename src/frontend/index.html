@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comercial Nazareth — Tu tienda de abarrotes y productos esenciales en Ascope, La Libertad, Perú.">
+  <meta name="theme-color" content="#fdfcf9">
+  <meta property="og:title" content="Comercial Nazareth — Ascope, Perú">
+  <meta property="og:description" content="Tienda de abarrotes y productos esenciales en Ascope, La Libertad.">
+  <meta property="og:type" content="website">
+  <title>Comercial Nazareth — Ascope, Perú</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="pageTransitionOverlay"></div>
+  <div id="scrollProgress" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <div id="toastContainer" class="toast-container position-fixed bottom-0 start-0 p-3" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-nazareth" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand-logo" href="index.html" aria-label="Comercial Nazareth — Inicio">
+          <img class="brand-mark" src="images/nazareth-mark.svg" alt="" width="48" height="48">
+          <div>
+            <span class="brand-name">Comercial Nazareth</span>
+            <span class="brand-sub">Ascope, Perú</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+            <li class="nav-item"><a class="nav-link nav-link-organic active" href="index.html" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-organic" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-organic" href="ofertas.html">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-organic" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-organic" href="contacto.html">Contacto</a></li>
+            <li class="nav-item ms-lg-2">
+              <button class="nav-link nav-cart-btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-label="Ver carrito">
+                <i class="bi bi-basket2 me-1"></i>Carrito
+                <span class="cart-badge" style="display:none;">0</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero-organic" aria-labelledby="hero-title">
+      <div class="hero-watermark" aria-hidden="true">NAZARETH</div>
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="hero-label reveal">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              Ascope, La Libertad · Perú
+            </div>
+
+            <h1 class="hero-heading" id="hero-title">
+              <span class="reveal delay-1">Tu tienda de</span>
+              <span class="line-2 reveal delay-2">confianza</span>
+              <span class="reveal delay-3">en Ascope</span>
+            </h1>
+
+            <p class="hero-subtext reveal delay-3">
+              Abarrotes, bebidas, lácteos, limpieza y snacks. Todo lo que tu familia necesita, con la calidad y el precio que mereces.
+            </p>
+
+            <div class="hero-actions reveal delay-4">
+              <a href="productos.html" class="btn-primary-organic btn-magnetic">
+                <span class="hero-btn-symbol symbol-products" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="7" height="7" rx="2"/>
+                    <rect x="14" y="3" width="7" height="7" rx="2"/>
+                    <rect x="3" y="14" width="7" height="7" rx="2"/>
+                    <path d="M14 17.5h7M17.5 14v7"/>
+                  </svg>
+                </span>
+                <span>Ver productos</span>
+              </a>
+              <a href="contacto.html" class="btn-ghost-organic btn-magnetic">
+                <span class="hero-btn-symbol symbol-contact" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 5.5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-8l-4.5 3v-3H5a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z"/>
+                    <path d="M7.5 9.5h9M7.5 12.5h6"/>
+                  </svg>
+                </span>
+                <span>Contáctanos</span>
+              </a>
+            </div>
+
+            <div class="hero-stats-row reveal delay-5" aria-label="Estadísticas de la tienda">
+              <div class="hero-stat-item">
+                <span class="hero-stat-number" data-count="24" data-suffix="+">0+</span>
+                <span class="hero-stat-label">Productos</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number" data-count="4">0</span>
+                <span class="hero-stat-label">Categorías</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number" data-count="10" data-suffix=" años">0</span>
+                <span class="hero-stat-label">Experiencia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 hero-card-side">
+            <div class="hero-showcase reveal-scale delay-3" aria-label="Selección destacada de Comercial Nazareth">
+              <div class="hero-showcase-orbit orbit-one" aria-hidden="true"></div>
+              <div class="hero-showcase-orbit orbit-two" aria-hidden="true"></div>
+              <div class="hero-showcase-copy">
+                <span class="showcase-eyebrow">Selección Nazareth</span>
+                <strong>Todo para tu mesa,<br>en un solo lugar.</strong>
+                <a href="productos.html" class="showcase-link">Explorar selección <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+              <div class="showcase-basket" aria-hidden="true">
+                <div class="basket-handle"></div>
+                <div class="basket-body">
+                  <span class="basket-item item-bottle"></span>
+                  <span class="basket-item item-bag"></span>
+                  <span class="basket-item item-box"></span>
+                  <span class="basket-item item-leaf"></span>
+                  <span class="basket-item item-bread"></span>
+                </div>
+              </div>
+              <div class="showcase-float-card float-card-price">
+                <span>Desde</span>
+                <strong>S/ 1.00</strong>
+              </div>
+              <div class="showcase-float-card float-card-rating">
+                <span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+                <span><strong>4.9</strong><small>clientes felices</small></span>
+              </div>
+              <div class="showcase-stamp" aria-hidden="true">
+                <span>CALIDAD</span><i class="bi bi-flower1"></i><span>LOCAL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP BY MOMENT -->
+    <section class="moment-section" aria-labelledby="moment-title">
+      <div class="container">
+        <div class="moment-heading reveal">
+          <div>
+            <span class="sec-kicker">Compra más fácil</span>
+            <h2 class="sec-title" id="moment-title">¿Qué necesitas <em>hoy?</em></h2>
+          </div>
+          <p>Selecciones pensadas para los momentos reales de cada familia de Ascope.</p>
+        </div>
+        <div class="moment-grid">
+          <a href="productos.html?category=abarrotes" class="moment-card moment-card-main reveal delay-1">
+            <div class="moment-card-copy">
+              <span class="moment-number">01</span>
+              <span class="moment-label">Para la semana</span>
+              <h3>La canasta completa de casa</h3>
+              <span class="moment-action">Comprar abarrotes <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="moment-art art-pantry" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </a>
+          <a href="productos.html?category=panaderia-snacks" class="moment-card moment-card-snack reveal delay-2">
+            <div class="moment-card-copy">
+              <span class="moment-number">02</span>
+              <span class="moment-label">Para compartir</span>
+              <h3>Algo rico para la tarde</h3>
+              <span class="moment-action">Ver snacks <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <i class="bi bi-cookie moment-line-icon" aria-hidden="true"></i>
+          </a>
+          <a href="productos.html?category=limpieza-higiene" class="moment-card moment-card-clean reveal delay-3">
+            <div class="moment-card-copy">
+              <span class="moment-number">03</span>
+              <span class="moment-label">Para cuidar</span>
+              <h3>Todo limpio, todo en calma</h3>
+              <span class="moment-action">Ver limpieza <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <i class="bi bi-stars moment-line-icon" aria-hidden="true"></i>
+          </a>
+          <a href="productos.html?category=bebidas-lacteos" class="moment-card moment-card-drink reveal delay-4">
+            <div class="moment-card-copy">
+              <span class="moment-number">04</span>
+              <span class="moment-label">Para refrescar</span>
+              <h3>Bebidas frías para todos</h3>
+              <span class="moment-action">Ver bebidas <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <i class="bi bi-cup-straw moment-line-icon" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="category-showcase" aria-labelledby="cats-title">
+      <div class="container">
+        <div class="simple-section-head reveal">
+          <div>
+            <span class="sec-kicker">Compra por categoría</span>
+            <h2 id="cats-title">Encuentra lo que necesitas.</h2>
+          </div>
+          <a href="productos.html" class="simple-text-link">Ver todos los productos <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="simple-category-grid">
+          <a href="productos.html?category=abarrotes" class="simple-category-card reveal delay-1">
+            <span class="simple-category-number">01</span>
+            <div><h3>Abarrotes</h3><p>Todo para tu despensa diaria.</p></div>
+            <span class="simple-category-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="productos.html?category=bebidas-lacteos" class="simple-category-card reveal delay-2">
+            <span class="simple-category-number">02</span>
+            <div><h3>Bebidas & Lácteos</h3><p>Opciones frescas para cada día.</p></div>
+            <span class="simple-category-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="productos.html?category=limpieza-higiene" class="simple-category-card reveal delay-3">
+            <span class="simple-category-number">03</span>
+            <div><h3>Limpieza & Higiene</h3><p>Cuidado sencillo para tu hogar.</p></div>
+            <span class="simple-category-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="productos.html?category=panaderia-snacks" class="simple-category-card reveal delay-4">
+            <span class="simple-category-number">04</span>
+            <div><h3>Panadería & Snacks</h3><p>Antojos para compartir y disfrutar.</p></div>
+            <span class="simple-category-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- READY-MADE PACKS -->
+    <section class="packs-section" aria-labelledby="packs-title">
+      <div class="container">
+        <div class="packs-heading reveal">
+          <div>
+            <span class="sec-kicker">Packs Nazareth</span>
+            <h2 id="packs-title">Resuelve la compra<br><em>en un solo clic.</em></h2>
+          </div>
+          <p>Combinaciones útiles, precios claros y productos que realmente necesitas. Agrégalos juntos y ajusta cantidades desde tu carrito.</p>
+        </div>
+        <div class="packs-grid">
+          <article class="pack-card pack-card-featured reveal delay-1">
+            <div class="pack-card-top">
+              <span class="pack-tag">El favorito</span>
+              <span class="pack-code">PACK 01</span>
+            </div>
+            <div class="pack-card-copy">
+              <span class="pack-purpose">Para empezar el día</span>
+              <h3>Desayuno<br>en familia</h3>
+              <p>Leche Gloria, pan de molde Bimbo y galletas Oreo.</p>
+            </div>
+            <div class="pack-product-shapes pack-shapes-breakfast" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="pack-card-footer">
+              <div><small>3 productos</small><strong>S/ 14.20</strong></div>
+              <button type="button" class="pack-add-btn" onclick="addNazarethPack('desayuno', this)">Agregar pack <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+          <article class="pack-card reveal delay-2">
+            <div class="pack-card-top"><span class="pack-tag">Esenciales</span><span class="pack-code">PACK 02</span></div>
+            <div class="pack-card-copy">
+              <span class="pack-purpose">Para la semana</span>
+              <h3>Despensa<br>lista</h3>
+              <p>Arroz, aceite, fideos y sal para tus comidas.</p>
+            </div>
+            <div class="pack-card-footer">
+              <div><small>4 productos</small><strong>S/ 15.40</strong></div>
+              <button type="button" class="pack-add-btn" onclick="addNazarethPack('despensa', this)">Agregar pack <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+          <article class="pack-card pack-card-clean reveal delay-3">
+            <div class="pack-card-top"><span class="pack-tag">Hogar</span><span class="pack-code">PACK 03</span></div>
+            <div class="pack-card-copy">
+              <span class="pack-purpose">Para cuidar tu casa</span>
+              <h3>Limpieza<br>completa</h3>
+              <p>Detergente, jabón, lejía y lavavajillas.</p>
+            </div>
+            <div class="pack-card-footer">
+              <div><small>4 productos</small><strong>S/ 24.20</strong></div>
+              <button type="button" class="pack-add-btn" onclick="addNazarethPack('limpieza', this)">Agregar pack <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="brand-collection" aria-labelledby="brands-title">
+      <div class="container">
+        <div class="simple-section-head simple-section-head-light reveal">
+          <div>
+            <span class="sec-kicker sec-kicker-dark">Marcas de confianza</span>
+            <h2 id="brands-title">Las conoces. Las encuentras aquí.</h2>
+          </div>
+          <p>Trabajamos con marcas reconocidas para ofrecerte calidad y variedad todos los días.</p>
+        </div>
+        <div class="simple-brand-grid reveal delay-1" aria-label="Marcas disponibles">
+          <span>Gloria</span><span>Inca Kola</span><span>Ariel</span><span>Bimbo</span>
+          <span>Nestlé</span><span>San Luis</span><span>Maggi</span><span>Sublime</span>
+          <span>Oreo</span><span>Lavaggi</span><span>Bolívar</span><span>Clorox</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOTIONS -->
+    <section class="promos-section" aria-labelledby="promos-title">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-5">
+          <div class="sec-header" style="margin-bottom:0;">
+            <span class="sec-kicker sec-kicker-dark reveal">Ofertas</span>
+            <h2 class="sec-title sec-title-light reveal delay-1" id="promos-title">Ofertas de la semana</h2>
+            <div class="sec-divider reveal delay-2"></div>
+          </div>
+          <a href="productos.html" class="btn-ghost-organic reveal delay-2"
+            style="border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.85);">
+            Ver todos <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 reveal delay-1">
+            <div class="promo-card" style="background:linear-gradient(135deg,#1a4427,#2e7d4a);">
+              <div class="promo-card-inner">
+                <div>
+                  <span class="promo-kicker"><i class="bi bi-basket2 me-1"></i>Abarrotes</span>
+                  <div class="promo-discount">15<small style="font-size:.4em;">%</small> OFF</div>
+                  <p class="promo-desc">Arroz, aceite y menestras seleccionados esta semana.</p>
+                </div>
+                <a href="productos.html?category=abarrotes" class="btn-promo-outline">
+                  Comprar ahora <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="promo-icon-deco" aria-hidden="true">🛒</div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal delay-2">
+            <div class="promo-card" style="background:linear-gradient(135deg,#0d4060,#1a7abf);">
+              <div class="promo-card-inner">
+                <div>
+                  <span class="promo-kicker"><i class="bi bi-cup-straw me-1"></i>Bebidas</span>
+                  <div class="promo-discount">2<small style="font-size:.4em;">×</small>1</div>
+                  <p class="promo-desc">Gaseosas y aguas en presentación familiar.</p>
+                </div>
+                <a href="productos.html?category=bebidas-lacteos" class="btn-promo-outline">
+                  Ver bebidas <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="promo-icon-deco" aria-hidden="true">🥤</div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal delay-3">
+            <div class="promo-card" style="background:linear-gradient(135deg,#6b2d08,#c96a0a);">
+              <div class="promo-card-inner">
+                <div>
+                  <span class="promo-kicker"><i class="bi bi-egg-fried me-1"></i>Snacks</span>
+                  <div class="promo-discount">3×S/5</div>
+                  <p class="promo-desc">Galletas, chocolates y chifles surtidos.</p>
+                </div>
+                <a href="productos.html?category=panaderia-snacks" class="btn-promo-outline">
+                  Ver snacks <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="promo-icon-deco" aria-hidden="true">🍪</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED CAROUSEL -->
+    <section class="carousel-section" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="sec-header center mb-5">
+          <span class="sec-kicker sec-kicker-dark reveal">Destacados</span>
+          <h2 class="sec-title sec-title-light reveal delay-1" id="featured-title">Productos <em style="color:var(--gold-2)">Especiales</em></h2>
+          <div class="sec-divider mx-auto reveal delay-2"></div>
+        </div>
+        <div class="position-relative px-lg-5 reveal-scale delay-2">
+          <div id="featuredCarousel" class="carousel slide featured-carousel"
+            data-bs-ride="carousel" data-bs-interval="5000"
+            aria-label="Carrusel de productos destacados">
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+            <div class="carousel-inner" id="carouselInner">
+              <div class="carousel-item active">
+                <div class="carousel-product-slide d-flex align-items-center justify-content-center" style="min-height:200px;background:var(--cream-1);">
+                  <div class="spinner-border" style="color:var(--forest-2);" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev" aria-label="Anterior">
+              <span aria-hidden="true">ANT</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next" aria-label="Siguiente">
+              <span aria-hidden="true">SIG</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / GALLERY -->
+    <section class="about-section sec" aria-labelledby="about-title">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <div class="about-story-kicker reveal">Nuestra historia</div>
+            <h2 class="sec-title reveal delay-1" id="about-title">Sirviendo a Ascope<br>con orgullo</h2>
+            <div class="sec-divider reveal delay-2"></div>
+            <blockquote class="pull-quote reveal delay-2">
+              "Más de 10 años llevando lo mejor del mercado a las familias de Ascope, La Libertad."
+            </blockquote>
+            <p class="sec-body reveal delay-3">
+              Comercial Nazareth nació del propósito de ofrecer productos de calidad a precios justos. Trabajamos con los mejores proveedores para garantizar frescura y variedad en cada visita.
+            </p>
+            <ul class="about-fact-list about-fact-numbered mt-4" aria-label="Datos de la tienda">
+              <li class="about-fact-item reveal delay-3">
+                <span class="about-fact-number" aria-hidden="true">24+</span>
+                <span><strong>Productos esenciales</strong><small>Una selección clara para comprar mejor.</small></span>
+              </li>
+              <li class="about-fact-item reveal delay-4">
+                <span class="about-fact-number" aria-hidden="true">10</span>
+                <span><strong>Años en Ascope</strong><small>Conociendo a nuestros clientes por su nombre.</small></span>
+              </li>
+              <li class="about-fact-item reveal delay-5">
+                <span class="about-fact-number" aria-hidden="true">01</span>
+                <span><strong>Atención cercana</strong><small>En tienda o mediante un pedido directo.</small></span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7 reveal-right delay-2">
+            <div class="story-board" aria-label="Principios de Comercial Nazareth">
+              <div class="story-board-main">
+                <span class="story-board-label">Comercial Nazareth · Ascope</span>
+                <strong>La tienda de siempre, pensada para comprar mejor.</strong>
+                <span class="story-board-year">Desde 2016</span>
+              </div>
+              <div class="story-board-card"><span>01</span><strong>Selección útil</strong><small>Lo que una familia realmente necesita.</small></div>
+              <div class="story-board-card"><span>02</span><strong>Precio justo</strong><small>Claridad y valor en cada compra.</small></div>
+              <div class="story-board-card"><span>03</span><strong>Atención local</strong><small>Personas atendiendo a personas.</small></div>
+              <div class="story-board-card story-board-accent"><span>04</span><strong>Ascope primero</strong><small>Un negocio cercano a su comunidad.</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR PRODUCTS -->
+    <section class="popular-section sec" aria-labelledby="popular-title">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-5">
+          <div class="sec-header" style="margin-bottom:0;">
+            <span class="sec-kicker reveal">Más vendidos</span>
+            <h2 class="sec-title reveal delay-1 mb-0" id="popular-title">Productos <em>Populares</em></h2>
+            <div class="sec-divider reveal delay-2"></div>
+          </div>
+          <a href="productos.html" class="btn-ghost-organic reveal delay-2">
+            Ver todos <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+        <div class="row g-3" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- SERVICE EXPERIENCE -->
+    <section class="service-experience" aria-labelledby="service-title">
+      <div class="container">
+        <div class="service-shell">
+          <div class="service-intro reveal">
+            <span class="service-overline">Servicio Nazareth</span>
+            <h2 id="service-title">De tu lista<br>a tu pedido.</h2>
+            <p>Una experiencia sencilla, directa y pensada para las compras cotidianas de Ascope.</p>
+            <a href="productos.html" class="service-link">Empezar mi compra <span aria-hidden="true">→</span></a>
+          </div>
+          <ol class="service-journey" aria-label="Cómo realizar un pedido">
+            <li class="reveal delay-1">
+              <span class="service-step-number">01</span>
+              <div><strong>Elige</strong><p>Busca por nombre, categoría o revisa nuestras selecciones.</p></div>
+              <span class="service-status">Catálogo disponible</span>
+            </li>
+            <li class="reveal delay-2">
+              <span class="service-step-number">02</span>
+              <div><strong>Arma tu pedido</strong><p>Agrega productos o packs y ajusta las cantidades.</p></div>
+              <span class="service-status">Carrito flexible</span>
+            </li>
+            <li class="reveal delay-3">
+              <span class="service-step-number">03</span>
+              <div><strong>Confirma</strong><p>Envíanos tu lista por WhatsApp y confirmamos disponibilidad.</p></div>
+              <span class="service-status service-status-live">Atención hoy</span>
+            </li>
+          </ol>
+          <div class="service-promise reveal delay-4">
+            <span>Atención local</span>
+            <strong>Una persona real confirma tu pedido.</strong>
+            <small>Lun—Sáb · 7am—9pm</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="sec-header center mb-5">
+          <span class="sec-kicker reveal">Opiniones</span>
+          <h2 class="sec-title reveal delay-1" id="testimonials-title">Lo que dice <em>la gente</em></h2>
+          <p class="sec-body mx-auto text-center reveal delay-2">Nuestros clientes son la razón de todo lo que hacemos.</p>
+          <div class="sec-divider mx-auto reveal delay-2"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal delay-1">
+            <article class="testimonial-card" aria-label="Testimonio de María">
+              <span class="testimonial-index" aria-hidden="true">01</span>
+              <div class="testimonial-rating" aria-label="Calificación: excelente">Excelente atención</div>
+              <p class="testimonial-text">"Siempre encuentro todo lo que busco en Comercial Nazareth. Los precios son los mejores de Ascope y la atención es muy amable. ¡Mi tienda favorita!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">MR</div>
+                <div>
+                  <div class="author-name">María Ríos</div>
+                  <div class="author-loc">Cliente de Ascope</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 reveal delay-2">
+            <article class="testimonial-card" aria-label="Testimonio de Carlos">
+              <span class="testimonial-index" aria-hidden="true">02</span>
+              <div class="testimonial-rating" aria-label="Calificación: pedido rápido">Pedido rápido</div>
+              <p class="testimonial-text">"Hago mis pedidos por WhatsApp y siempre llegan completos. Es muy cómodo poder elegir desde casa. ¡Recomendado al 100%!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">CL</div>
+                <div>
+                  <div class="author-name">Carlos López</div>
+                  <div class="author-loc">Cliente de Ascope</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 reveal delay-3">
+            <article class="testimonial-card" aria-label="Testimonio de Rosa">
+              <span class="testimonial-index" aria-hidden="true">03</span>
+              <div class="testimonial-rating" aria-label="Calificación: calidad constante">Calidad constante</div>
+              <p class="testimonial-text">"Compro aquí desde hace años. Los productos siempre están frescos y hay de todo. El arroz y la leche que venden son de primera calidad."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">RV</div>
+                <div>
+                  <div class="author-name">Rosa Vásquez</div>
+                  <div class="author-loc">Cliente de Ascope</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY NAZARETH -->
+    <section class="why-section sec" aria-labelledby="why-title">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 text-center text-lg-start">
+            <span class="sec-kicker reveal">¿Por qué elegirnos?</span>
+            <h2 class="sec-title reveal delay-1" id="why-title">Tu bienestar,<br><em>nuestra prioridad</em></h2>
+            <div class="sec-divider reveal delay-2"></div>
+            <p class="sec-body reveal delay-3">Llevamos más de 10 años sirviendo a las familias de Ascope con calidad, precio justo y atención personalizada.</p>
+            <div class="mt-4 reveal delay-4">
+              <span class="why-big-stat" data-count="10" data-suffix="+">0+</span>
+              <span class="sec-body">años de confianza en Ascope</span>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <ul class="why-list" aria-label="Razones para elegirnos">
+              <li class="why-item reveal delay-1">
+                <div class="why-icon"><i class="bi bi-award" aria-hidden="true"></i></div>
+                <div>
+                  <div class="why-title">Calidad garantizada</div>
+                  <div class="why-desc">Seleccionamos productos de las mejores marcas y proveedores confiables del país.</div>
+                </div>
+              </li>
+              <li class="why-item reveal delay-2">
+                <div class="why-icon"><i class="bi bi-cash-coin" aria-hidden="true"></i></div>
+                <div>
+                  <div class="why-title">Precios justos</div>
+                  <div class="why-desc">Los mejores precios pensados para el bolsillo de las familias de Ascope.</div>
+                </div>
+              </li>
+              <li class="why-item reveal delay-3">
+                <div class="why-icon"><i class="bi bi-whatsapp" aria-hidden="true"></i></div>
+                <div>
+                  <div class="why-title">Pedidos por WhatsApp</div>
+                  <div class="why-desc">Arma tu carrito y envíanos el pedido directo por WhatsApp en segundos.</div>
+                </div>
+              </li>
+              <li class="why-item reveal delay-4">
+                <div class="why-icon"><i class="bi bi-heart" aria-hidden="true"></i></div>
+                <div>
+                  <div class="why-title">Atención familiar</div>
+                  <div class="why-desc">Te atendemos con el cariño y la confianza que tu familia siempre merece.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container text-center" style="position:relative;z-index:1;">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <span class="sec-kicker sec-kicker-dark reveal d-flex justify-content-center">¡Empieza hoy!</span>
+            <h2 class="cta-heading mt-2 reveal delay-1" id="cta-title">
+              ¿Listo para hacer<br>tu pedido?
+            </h2>
+            <p class="cta-subtext reveal delay-2">
+              Explora el catálogo, agrega lo que necesitas y pide directo por WhatsApp en segundos.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap mt-4 reveal delay-3">
+              <a href="productos.html" class="btn-cta-cream btn-magnetic">
+                <span class="cta-btn-symbol" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 4.5h12.5A1.5 1.5 0 0 1 19 6v12.5"/>
+                    <path d="M5 4.5A1.5 1.5 0 0 0 3.5 6v12.5A1.5 1.5 0 0 0 5 20h12.5"/>
+                    <path d="M8 9h7M8 12.5h7M8 16h4"/>
+                    <path d="m15.5 17.5 2 2 3.5-4"/>
+                  </svg>
+                </span>
+                <span>Ver catálogo</span>
+              </a>
+              <a href="https://wa.me/51978338102" target="_blank" rel="noopener noreferrer"
+                class="btn-whatsapp-cta btn-magnetic">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i> Escribir por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer-organic footer-premium" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer-intro">
+        <img src="images/nazareth-logo-light.svg" alt="Comercial Nazareth, Ascope" width="330" height="76">
+        <p>Lo esencial de cada día, seleccionado con cercanía para las familias de Ascope.</p>
+        <a href="productos.html" class="footer-catalog-link">Explorar catálogo <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="row g-5 footer-columns">
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="footer-heading">Comprar</h4>
+          <a href="productos.html?category=abarrotes" class="footer-link">Abarrotes</a>
+          <a href="productos.html?category=bebidas-lacteos" class="footer-link">Bebidas y lácteos</a>
+          <a href="productos.html?category=limpieza-higiene" class="footer-link">Limpieza e higiene</a>
+          <a href="productos.html?category=panaderia-snacks" class="footer-link">Panadería y snacks</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="footer-heading">Visítanos</h4>
+          <p class="footer-link">Ascope, La Libertad, Perú</p>
+          <p class="footer-link">Lunes a sábado · 7am—9pm</p>
+          <p class="footer-link">Domingo · 8am—1pm</p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="footer-heading">Hablemos</h4>
+          <a href="tel:+51978338102" class="footer-link">+51 978 338 102</a>
+          <a href="mailto:nazareth@ejemplo.com" class="footer-link">nazareth@ejemplo.com</a>
+          <a href="contacto.html" class="footer-link">Formulario de contacto</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="footer-heading">Comercial Nazareth</h4>
+          <p class="footer-link">Calidad cotidiana.</p>
+          <p class="footer-link">Precios claros.</p>
+          <p class="footer-link">Atención local.</p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span>&copy; 2026 Comercial Nazareth.</span>
+        <span>Diseñado para Ascope, La Libertad.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART OFFCANVAS -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartLabel">
+    <div class="offcanvas-header" style="background:var(--forest-4);color:#fff;">
+      <h5 class="offcanvas-title fw-bold" id="cartLabel"><i class="bi bi-basket2 me-2"></i>Mi Carrito</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar carrito"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column p-3" style="background:var(--cream-1);">
+      <div id="cartEmpty" class="cart-empty-msg">
+        <i class="bi bi-basket2" aria-hidden="true"></i>
+        <p class="fw-semibold mb-1" style="color:var(--ink-2);">Tu carrito está vacío</p>
+        <p class="small" style="color:var(--ink-4);">Agrega productos para verlos aquí.</p>
+        <a href="productos.html" class="btn btn-outline-success rounded-pill mt-2" data-bs-dismiss="offcanvas">Ver productos</a>
+      </div>
+      <div id="cartItemsList" class="flex-grow-1 overflow-auto" aria-live="polite"></div>
+      <div id="cartActions" style="display:none;">
+        <div class="cart-total-box mb-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="fw-semibold" style="color:var(--ink-2);">Total del pedido</span>
+            <span id="cartTotal" class="fw-bold fs-5" style="color:var(--forest-3);">S/ 0.00</span>
+          </div>
+        </div>
+        <button class="btn-whatsapp mb-2" onclick="Cart.sendToWhatsApp()">
+          <i class="bi bi-whatsapp me-2"></i>Pedir por WhatsApp
+        </button>
+        <button class="btn btn-outline-danger w-100 rounded-pill" onclick="Cart.clearCart()">
+          <i class="bi bi-trash me-2"></i>Vaciar carrito
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product detail modal -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4 overflow-hidden">
+        <div class="modal-header" style="background:var(--nazareth-green);color:#fff;border:none;">
+          <h2 class="modal-title fs-5 fw-bold" id="productModalLabel">Detalle del producto</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img id="modalProductImg" src="" alt="" class="modal-product-img rounded-0" style="border-radius:0!important;height:100%;min-height:260px;">
+            </div>
+            <div class="col-md-7 p-4">
+              <span id="modalProductCategory" class="product-category d-block mb-1"></span>
+              <h3 id="modalProductName" class="fw-bold mb-2" style="font-size:1.3rem;"></h3>
+              <p id="modalProductDesc" class="text-muted mb-3" style="font-size:.9rem;"></p>
+              <div class="d-flex align-items-baseline gap-2 mb-4">
+                <span id="modalProductPrice" class="modal-product-price"></span>
+                <span id="modalProductUnit" class="text-muted small"></span>
+              </div>
+              <div class="mb-4">
+                <label class="fw-semibold small mb-2 d-block">Cantidad:</label>
+                <div class="qty-control">
+                  <button class="qty-btn" type="button" onclick="adjustModalQty(-1)" aria-label="Reducir cantidad">−</button>
+                  <span id="modalQtyDisplay" class="qty-display">1</span>
+                  <button class="qty-btn" type="button" onclick="adjustModalQty(1)" aria-label="Aumentar cantidad">+</button>
+                </div>
+              </div>
+              <button id="modalAddToCart" class="btn btn-green w-100 py-2 rounded-pill fw-bold" type="button">
+                <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/51978338102" target="_blank" rel="noopener noreferrer"
+    class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ofertas y packs de Comercial Nazareth en Ascope, Perú.">
+  <meta name="theme-color" content="#fdfcf9">
+  <title>Ofertas — Comercial Nazareth</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="pageTransitionOverlay"></div>
+  <div id="scrollProgress" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <div id="toastContainer" class="toast-container position-fixed bottom-0 start-0 p-3" aria-live="polite"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-nazareth" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand-logo" href="index.html" aria-label="Comercial Nazareth — Inicio">
+          <img class="brand-mark" src="images/nazareth-mark.svg" alt="" width="48" height="48">
+          <div><span class="brand-name">Comercial Nazareth</span><span class="brand-sub">Ascope, Perú</span></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+            <li class="nav-item"><a class="nav-link nav-link-organic" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-organic" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-organic active" href="ofertas.html" aria-current="page">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-organic" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-organic" href="contacto.html">Contacto</a></li>
+            <li class="nav-item ms-lg-2"><button class="nav-link nav-cart-btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-label="Ver carrito">Carrito <span class="cart-badge" style="display:none;">0</span></button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="offers-premium-hero" aria-labelledby="offers-title">
+      <div class="container">
+        <div class="offers-premium-layout">
+          <div class="offers-premium-copy reveal">
+            <span class="page-overline">Ofertas seleccionadas · Junio</span>
+            <h1 id="offers-title">Más valor<br>en cada <em>compra.</em></h1>
+            <p>Precios especiales en productos esenciales y packs útiles para organizar mejor tu semana.</p>
+            <div class="offers-premium-actions">
+              <a href="#packs" class="btn-primary-organic">Explorar packs</a>
+              <a href="productos.html" class="offers-premium-link">Ver catálogo <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="offers-premium-meta">
+              <div><strong>03</strong><span>Packs disponibles</span></div>
+              <div><strong>24+</strong><span>Productos esenciales</span></div>
+              <div><strong>Hoy</strong><span>Stock confirmado</span></div>
+            </div>
+          </div>
+
+          <a href="productos.html?category=abarrotes" class="offers-feature-card reveal-scale delay-2">
+            <div class="offers-feature-top">
+              <span>Oferta destacada</span>
+              <span>01 / 03</span>
+            </div>
+            <div class="offers-feature-discount"><strong>15</strong><span>%<small>menos</small></span></div>
+            <div class="offers-feature-copy">
+              <span>Despensa diaria</span>
+              <h2>Abarrotes seleccionados</h2>
+              <p>Productos esenciales a un mejor precio durante esta semana.</p>
+            </div>
+            <div class="offers-feature-bottom"><span>Hasta agotar stock</span><b aria-hidden="true">→</b></div>
+          </a>
+        </div>
+
+        <div class="offers-quick-row reveal delay-3">
+          <a href="productos.html?category=bebidas-lacteos"><span>Bebidas y lácteos</span><strong>2 × 1</strong><small>Ver selección →</small></a>
+          <a href="productos.html?category=panaderia-snacks"><span>Panadería y snacks</span><strong>3 por S/ 5</strong><small>Ver selección →</small></a>
+          <div><span>Compra tranquila</span><strong>Precio confirmado</strong><small>Antes de preparar tu pedido</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="deal-strip" aria-label="Ofertas rápidas">
+      <div class="container">
+        <div class="deal-strip-grid">
+          <a href="productos.html?category=abarrotes" class="deal-mini deal-mini-green reveal">
+            <span>01 · Despensa</span><strong>Arroz + aceite</strong><small>Una combinación esencial para la semana.</small><b>Desde S/ 11.40</b>
+          </a>
+          <a href="productos.html?category=bebidas-lacteos" class="deal-mini deal-mini-blue reveal delay-1">
+            <span>02 · Refrigerados</span><strong>Desayuno listo</strong><small>Leche, yogurt y bebida para empezar bien.</small><b>Desde S/ 14.30</b>
+          </a>
+          <a href="productos.html?category=panaderia-snacks" class="deal-mini deal-mini-orange reveal delay-2">
+            <span>03 · Para compartir</span><strong>Snacks favoritos</strong><small>Opciones para la tarde y reuniones.</small><b>Desde S/ 5.00</b>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="packs-section" id="packs" aria-labelledby="packs-title">
+      <div class="container">
+        <div class="packs-heading reveal">
+          <div><span class="sec-kicker">Packs Nazareth</span><h2 id="packs-title">Listos para <em>resolver.</em></h2></div>
+          <p>Combinaciones útiles con precios transparentes. Consulta disponibilidad y pide directamente por WhatsApp.</p>
+        </div>
+        <div class="packs-grid">
+          <article class="pack-card pack-card-featured reveal delay-1">
+            <div class="pack-card-top"><span class="pack-tag">Más elegido</span><span class="pack-code">P-01</span></div>
+            <div class="pack-card-copy"><span class="pack-purpose">Para empezar el día</span><h3>Desayuno familiar</h3><p>Leche, pan de molde, yogurt, galletas y bebida para una semana práctica.</p></div>
+            <div class="pack-card-footer"><div><small>Precio referencial</small><strong>S/ 24.90</strong></div><a href="productos.html?category=bebidas-lacteos" class="pack-add-btn">Ver productos <span>→</span></a></div>
+          </article>
+          <article class="pack-card reveal delay-2">
+            <div class="pack-card-top"><span class="pack-tag">Despensa</span><span class="pack-code">P-02</span></div>
+            <div class="pack-card-copy"><span class="pack-purpose">Para la semana</span><h3>Canasta esencial</h3><p>Arroz, aceite, azúcar, pasta, sal y menestras para las comidas de casa.</p></div>
+            <div class="pack-card-footer"><div><small>Precio referencial</small><strong>S/ 27.90</strong></div><a href="productos.html?category=abarrotes" class="pack-add-btn">Ver productos <span>→</span></a></div>
+          </article>
+          <article class="pack-card pack-card-clean reveal delay-3">
+            <div class="pack-card-top"><span class="pack-tag">Hogar</span><span class="pack-code">P-03</span></div>
+            <div class="pack-card-copy"><span class="pack-purpose">Para cuidar</span><h3>Limpieza completa</h3><p>Detergente, lejía, jabón, lavavajillas y papel para mantener todo listo.</p></div>
+            <div class="pack-card-footer"><div><small>Precio referencial</small><strong>S/ 31.50</strong></div><a href="productos.html?category=limpieza-higiene" class="pack-add-btn">Ver productos <span>→</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-rules">
+      <div class="container">
+        <div class="simple-section-head reveal">
+          <div><span class="sec-kicker">Comprar con claridad</span><h2>Sin letras pequeñas.</h2></div>
+          <p>Las promociones dependen del stock disponible. Confirmamos precio y disponibilidad antes de preparar tu pedido.</p>
+        </div>
+        <div class="offer-rule-grid">
+          <div><span>01</span><strong>Elige</strong><p>Revisa las ofertas y productos disponibles.</p></div>
+          <div><span>02</span><strong>Confirma</strong><p>Escríbenos para validar stock y precio final.</p></div>
+          <div><span>03</span><strong>Recibe</strong><p>Coordinamos tu pedido de forma directa.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-organic footer-premium" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer-intro"><img src="images/nazareth-logo-light.svg" alt="Comercial Nazareth, Ascope" width="330" height="76"><p>Lo esencial de cada día, seleccionado con cercanía para las familias de Ascope.</p><a href="productos.html" class="footer-catalog-link">Explorar catálogo <span>→</span></a></div>
+      <div class="row g-5 footer-columns">
+        <div class="col-sm-6 col-lg-3"><h4 class="footer-heading">Comprar</h4><a href="productos.html?category=abarrotes" class="footer-link">Abarrotes</a><a href="productos.html?category=bebidas-lacteos" class="footer-link">Bebidas y lácteos</a><a href="productos.html?category=limpieza-higiene" class="footer-link">Limpieza e higiene</a><a href="productos.html?category=panaderia-snacks" class="footer-link">Panadería y snacks</a></div>
+        <div class="col-sm-6 col-lg-3"><h4 class="footer-heading">Visítanos</h4><p class="footer-link">Ascope, La Libertad, Perú</p><p class="footer-link">Lunes a sábado · 7am—9pm</p><p class="footer-link">Domingo · 8am—1pm</p></div>
+        <div class="col-sm-6 col-lg-3"><h4 class="footer-heading">Hablemos</h4><a href="tel:+51978338102" class="footer-link">+51 978 338 102</a><a href="mailto:nazareth@ejemplo.com" class="footer-link">nazareth@ejemplo.com</a><a href="contacto.html" class="footer-link">Formulario de contacto</a></div>
+        <div class="col-sm-6 col-lg-3"><h4 class="footer-heading">Comercial Nazareth</h4><p class="footer-link">Calidad cotidiana.</p><p class="footer-link">Precios claros.</p><p class="footer-link">Atención local.</p></div>
+      </div>
+      <hr class="footer-divider"><div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2"><span>&copy; 2026 Comercial Nazareth.</span><span>Diseñado para Ascope, La Libertad.</span></div>
+    </div>
+  </footer>
+
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartLabel"><div class="offcanvas-header" style="background:var(--forest-4);color:#fff;"><h5 id="cartLabel">Mi Carrito</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div><div class="offcanvas-body d-flex flex-column"><div id="cartEmpty" class="cart-empty-msg"><p>Tu carrito está vacío</p></div><div id="cartItemsList" class="flex-grow-1"></div><div id="cartActions" style="display:none;"><div class="cart-total-box mb-3"><span>Total</span><strong id="cartTotal">S/ 0.00</strong></div><button class="btn-whatsapp" onclick="Cart.sendToWhatsApp()">Pedir por WhatsApp</button></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/cart.js"></script><script src="js/animations.js"></script>
+</body>
+</html>

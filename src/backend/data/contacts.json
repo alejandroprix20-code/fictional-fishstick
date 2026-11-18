@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1782514825326,
+    "name": "Alejandro Horna Quezada",
+    "email": "alejandrohq2007@gmail.com",
+    "phone": "92716585",
+    "subject": "Disponibilidad de producto",
+    "message": "Esta mal hecho",
+    "createdAt": "2026-06-26T23:00:25.326Z"
+  },
+  {
+    "id": 1782851953095,
+    "name": "Alejandro",
+    "email": "alejandro.horna.37@gmail.com",
+    "phone": "927 165 585",
+    "subject": "Disponibilidad de producto",
+    "message": "Necesito un abarrote",
+    "createdAt": "2026-06-30T20:39:13.095Z"
+  },
+  {
+    "id": 1783633023260,
+    "name": "Alejandro",
+    "email": "alejandro.hon23@gmail.com",
+    "phone": "927456230",
+    "subject": "Pedido especial",
+    "message": "No encuentro los productos",
+    "createdAt": "2026-07-09T21:37:03.260Z"
+  }
+]
